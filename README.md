@@ -42,7 +42,7 @@ python3 balance_train.ipynb
 ```
 python3 pinkas_siamese_random_pairs.py
 ```
-3. Train sianese network on hard pairs
+3. Train siamese network on hard pairs
 ```
 python3 pinkas_siamese_hard_pairs.py
 ```
