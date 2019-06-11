@@ -33,28 +33,18 @@ os.environ["CUDA_VISIBLE_DEVICES"]="2"
 ```
 
 ### How to run the project
-1. Crop words from a book in [VML dataset](https://www.cs.bgu.ac.il/~majeek/)
+1. Download the [Pinkas dataset](https://www.cs.bgu.ac.il/~berat/)
+2. Balance train set at 30 samples
 ```
-python3 DatasetMaker.py
+python3 balance_train.ipynb
 ```
-2. Rename folders
+2. Train siamese network on 100 same pairs and 100 different pairs from each class
 ```
-python3 DatasetOutsideRenamer.py
+python3 pinkas_siamese_random_pairs.py
 ```
-3. Create validation set
+3. Train sianese network on hard pairs
 ```
-python3 10selector.py
+python3 pinkas_siamese_hard_pairs.py
 ```
-4. Create train set
-```
-python3 20selector.py
-```
-5. Create out of vocabulary (OOV) test set
-```
-python3 100selector.py
-```
-6. Train FCN and measure mAP on OOV test set
-```
-python3 vmlclmaxmap.py
-```
+
 
