@@ -40,11 +40,11 @@ python3 balance_train.ipynb
 ```
 2. Train siamese network on 100 same pairs and 100 different pairs from each class
 ```
-python3 pinkas_siamese_random_pairs.py
+pinkas_siamese_random_pairs.ipynb
 ```
 3. Train siamese network on hard pairs
 ```
-python3 pinkas_siamese_hard_pairs.py
+pinkas_siamese_hard_pairs.ipynb
 ```
 
 
